@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <MyType>Windows</MyType>
+    <ProductVersion>9.0.20907</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25248BB6-ADCB-4D94-99D3-37A250924561}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>PFT_COLLECTION_TOOL</AssemblyName>
+    <OutputType>Library</OutputType>
+    <AssemblyMajorVersion>12</AssemblyMajorVersion>
+    <AssemblyMinorVersion>1</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>0</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>False</GenerateRevisionNumber>
+    <AssemblyCompanyName>Cerner Corporation</AssemblyCompanyName>
+    <ApplicationIcon>PFT_COLLECTION_TOOL.ico</ApplicationIcon>
+    <RootNamespace>Cerner.PFT_COLLECTION_TOOL</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>UpliftGAC_StrongNameKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win64</DefineConstants>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win64</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ApplicationFramework.GUI">
+      <HintPath>\\tahoe\Solution-Test\winintel\ApplicationFramework.GUI.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.CODESETLib">
+      <HintPath>\\tahoe\Solution-Test\winintel\AxInterop.CODESETLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\tahoe\Solution-Test\winintel\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Foundations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\tahoe\Solution-Test\winintel\Foundations.dll</HintPath>
+    </Reference>
+    <Reference Include="CernerFoundations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\tahoe\Solution-Test\winintel\CernerFoundations.dll</HintPath>
+    </Reference>
+    <Reference Include="ApplicationFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\tahoe\Solution-Test\winintel\ApplicationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.CODESETLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=98ec9cb7b15b7e98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>\\tahoe\Solution-Test\winintel\Interop.CODESETLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PatientAccountingSearch">
+      <HintPath>\\tahoe\Solution-Test\winintel\PatientAccountingSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="PFTFramework">
+      <HintPath>\\tahoe\Solution-Test\winintel\PFTFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="PFT_PatientAccountingReusable">
+      <HintPath>\\tahoe\Solution-Test\winintel\PFT_PatientAccountingReusable.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CCollectionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CCollectionView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmCollectionLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCollectionLetter.Designer.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>frmCollectionLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PFT_COLLECTION_TOOL_ResourceHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProFitData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Resources\3705.ico" />
+    <EmbeddedResource Include="Resources\4097.ico" />
+    <EmbeddedResource Include="Resources\Exit.ico" />
+    <EmbeddedResource Include="Resources\Save_New.ico" />
+    <EmbeddedResource Include="frmCollectionLetter.resX">
+      <DependentUpon>frmCollectionLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="PFT_COLLECTION_TOOL.ico" />
+    <EmbeddedResource Include="StringResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="UpliftGAC_StrongNameKey.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
